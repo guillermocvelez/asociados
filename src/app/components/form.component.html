@@ -1,0 +1,35 @@
+<div class="form-container container-fluid d-md-none d-lg-none">
+    
+    <form action="">
+    
+    <select class="form-select form-control form-control-lg">
+        <option class="text-muted">Marca del Auto</option>
+        <option class=" ">Chevrolet</option>
+        <option class=" ">Renault</option>
+        <option class=" ">Mazda</option>
+    </select>
+
+    <div class="form-model-container">
+        <select class="form-select form-model-selector form-control form-control-lg">
+            <option>Modelo de auto</option>
+            <option class=" ">Chevrolet</option>
+        </select>
+        <select class="form-select form-year-selector form-control form-control-lg">
+            <option>año</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+        </select>
+        
+    </div>
+    <input class="form-control" type="email" placeholder="Email" value="@" required>
+    <input class="form-control" type="tel" placeholder="Teléfono" maxlength="10"  value="+57" required>
+    <button class="btn mt-4" (click)="validate()" >Comprar ahora</button>
+    </form>
+</div>
+
+
+    
+
+
+

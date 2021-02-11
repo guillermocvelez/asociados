@@ -1,0 +1,164 @@
+<div id="carouselExampleCaptions" class="carousel slide d-lg-none" data-ride="carousel" data-interval="false">
+    
+    <div class="carousel-inner position-relative" >
+        
+      <div class="carousel-item active">
+        <div class="carousel-counter position-absolute  m-0"><p class="carousel-counter ">1/3 
+        </p></div>
+        <img [src]="img[0]" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-counter position-absolute  m-0"><p class="carousel-counter ">2/3 
+        </p></div>
+        <img [src]="img[1]" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-counter position-absolute  m-0"><p class="carousel-counter ">3/3 
+        </p></div>
+        <img [src]="img[2]" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev d-none d-sm-none" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next d-none d-sm-none" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <form class="form-lg d-none d-sm-none d-md-block d-lg-block" action="">
+      <select class="form-select form-control form-control-lg">
+          <option class="text-muted">Marca del Auto</option>
+          <option class=" ">Chevrolet</option>
+          <option class=" ">Renault</option>
+          <option class=" ">Mazda</option>
+      </select>
+  
+      <div class="form-model-container">
+          <select class="form-select form-model-selector form-control form-control-lg">
+              <option>Modelo de auto</option>
+              <option class=" ">Chevrolet</option>
+          </select>
+          <select class="form-select form-year-selector form-control form-control-lg">
+              <option>año</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+          </select>
+          
+      </div>
+      <input class="form-control" type="email" placeholder="Email">
+      <input class="form-control" type="tel" placeholder="Teléfono">
+      <button class="btn mt-4 mb-4" (click)="validate()">Cotizar ahora</button>
+      </form>
+  </div>
+
+<!-- CARROUSEL-DESTOP -->
+
+  <div class="banner-desktop container d-none d-md-none d-lg-flex">
+    <div class="container-fluid banner-background"></div>
+    <div id="carousel" class="carousel slide w-100 p-0 m-0">
+      <div class="carousel-inner position-relative">
+          
+        <div class="carousel-item active">
+          <div class="carousel-counter position-absolute  m-0"><p class="carousel-counter ">1/3 
+          </p></div>
+          <img [src]="img[0]" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-counter position-absolute  m-0"><p class="carousel-counter ">2/3 
+          </p></div>
+          <img [src]="img[1]" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item"><div class=" position-absolute m-0"><p class="carousel-counter ">3/3 
+        </p></div>
+          <img [src]="img[2]" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      
+    </div>
+
+    <form class="form-desktop d-none d-sm-none d-md-block d-lg-block" action="">
+      <label class="text-secondary">Marca del Auto</label>
+      <select class="form-select form-control form-control-lg">
+          <option value=""></option>
+          <option class=" ">Chevrolet</option>
+          <option class=" ">Renault</option>
+          <option class=" ">Mazda</option>
+      </select>
+  
+      
+          <div class="form-model-container">
+
+            <div class="model">
+              <label class="text-secondary">Modelo del auto</label>
+              <select class="form-select form-model-selector form-control form-control-lg" aria-label=".form-select-lg example">
+                  <option></option>
+                  <option class=" ">Chevrolet</option>
+              </select>
+            </div>
+
+            <div class="year">
+              <label class="text-secondary">Año</label>
+              <select class="form-select form-year-selector form-control form-control-lg">
+                  <option></option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+              </select>
+            </div>
+            
+          </div>
+          
+      <label class="text-secondary">Email</label>
+      <input class="form-control" type="email" placeholder="@" required>
+      <label class="text-secondary" >Teléfono</label>
+      <input class="form-control" type="tel" maxlength="10"  placeholder="+57" required>
+      <button type="submit" class="btn desktop-btn" (click)="validate()"  >Cotizar ahora</button>
+      </form>
+
+
+  </div>
+  <!-- Modal -->
+
+  <div id="modal" class="success-modal d-none" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PERFECTO!</h5>
+          <button type="button" class="exit-btn btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="close()"></button>
+        </div>
+        <div class="modal-body">
+          <p>Datos Enviados con éxito</p>
+          <p>En pocas horas tendras tu cotización</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="exit-btn btn btn-primary" (click)="close()">Salir</button>
+        </div>
+      </div>
+    </div>
+  </div>
